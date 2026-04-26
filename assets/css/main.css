@@ -98,12 +98,13 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		body {
+		background-color: #0f172a;
+		background-image: url("../../images/background.jpg");
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +121,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #000000;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2167,7 +2168,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #935d8c;
+			background: #000000;
 		}
 
 	input[type="checkbox"] + label,
@@ -2185,7 +2186,7 @@ input, select, textarea {
 	input[type="radio"]:checked + label:before {
 		background-color: #ffffff;
 		border-color: #ffffff;
-		color: #935d8c;
+		color: #000000;
 	}
 
 	input[type="checkbox"]:focus + label:before,
@@ -2633,7 +2634,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: center;
+		text-align: justify;
 	}
 
 	header.major {
@@ -2664,7 +2665,7 @@ input, select, textarea {
 		}
 
 		header.major.special {
-			text-align: center;
+			text-align: justify;
 		}
 
 			header.major.special h2:after {
@@ -3215,13 +3216,14 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
-		color: #636363;
+		background-color: transparent;
+		color: #ffffff;
+		font-weight: bold;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: #111111;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3229,19 +3231,23 @@ input, select, textarea {
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#nav blockquote {
@@ -3250,7 +3256,7 @@ input, select, textarea {
 
 		#nav code {
 			background: rgba(222, 222, 222, 0.25);
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 		#nav hr {
@@ -3293,11 +3299,11 @@ input, select, textarea {
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+						background-color: rgba(50, 50, 50, 0.5);
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #333333;
 						box-shadow: none;
 					}
 
@@ -3305,7 +3311,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: transparent;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3334,25 +3340,35 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #636363;
+		background-color: #111111;
+		color: #ffffff;
+		font-weight: bold;
 		border-radius: 0.25em;
+		text-align: justify;
 	}
 
+		#main p {
+			text-align: justify;
+		}
+
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main blockquote {
@@ -3361,7 +3377,7 @@ input, select, textarea {
 
 		#main code {
 			background: rgba(222, 222, 222, 0.25);
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 		#main hr {
@@ -3369,7 +3385,7 @@ input, select, textarea {
 		}
 
 		#main .box {
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 		#main input[type="submit"],
@@ -3387,7 +3403,7 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: rgba(50, 50, 50, 0.5);
 			}
 
 			#main input[type="submit"]:active,
@@ -3441,7 +3457,8 @@ input, select, textarea {
 				}
 
 		#main label {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main input[type="text"],
@@ -3449,8 +3466,8 @@ input, select, textarea {
 		#main input[type="email"],
 		#main select,
 		#main textarea {
-			background-color: rgba(222, 222, 222, 0.25);
-			border-color: #dddddd;
+			background-color: rgba(50, 50, 50, 0.5);
+			border-color: #333333;
 		}
 
 			#main input[type="text"]:focus,
@@ -3467,25 +3484,29 @@ input, select, textarea {
 		}
 
 			#main select option {
-				color: #636363;
-				background: #ffffff;
+				color: #ffffff;
+		font-weight: bold;
+				background: #111111;
 			}
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 			#main input[type="checkbox"] + label:before,
 			#main input[type="radio"] + label:before {
 				background: rgba(222, 222, 222, 0.25);
-				border-color: #dddddd;
+				border-color: #333333;
 			}
 
 		#main input[type="checkbox"]:checked + label:before,
 		#main input[type="radio"]:checked + label:before {
-			background-color: #636363;
-			border-color: #636363;
+			background-color: #ffffff;
+		font-weight: bold;
+			border-color: #ffffff;
+		font-weight: bold;
 			color: #ffffff;
 		}
 
@@ -3516,20 +3537,21 @@ input, select, textarea {
 		}
 
 		#main .icon.major {
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 			#main .icon.major:before {
-				border-color: #dddddd;
+				border-color: #333333;
 			}
 
 		#main .icon.alt {
-			border-color: #dddddd;
-			color: #636363;
+			border-color: #333333;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 			#main .icon.alt:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: rgba(50, 50, 50, 0.5);
 			}
 
 			#main .icon.alt:active {
@@ -3541,7 +3563,8 @@ input, select, textarea {
 		}
 
 		#main dl dt {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main header.major h2:after {
@@ -3553,15 +3576,16 @@ input, select, textarea {
 		}
 
 		#main table tbody tr {
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 			#main table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: rgba(50, 50, 50, 0.5);
 			}
 
 		#main table th {
-			color: #636363;
+			color: #ffffff;
+		font-weight: bold;
 		}
 
 		#main table thead {
@@ -3573,11 +3597,11 @@ input, select, textarea {
 		}
 
 		#main table.alt tbody tr td {
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 		#main .spotlight .image {
-			border-color: #dddddd;
+			border-color: #333333;
 		}
 
 		#main > .main {
@@ -3782,4 +3806,4 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
-		}
+		}\n.icon.ads-icon:before {\n\tcontent: '';\n\tbackground-image: url('../../images/ads_logo_black_white_bg.png');\n\tbackground-size: cover;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tborder-radius: 50%;\n}
