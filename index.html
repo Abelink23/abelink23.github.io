@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academic Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Enable Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Background Image Setup */
+        body {
+            margin: 0;
+            padding: 0;
+            /* CHANGE 'background.jpg' IF YOUR IMAGE HAS A DIFFERENT NAME OR EXTENSION */
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+
+        /* Fixed Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95); /* Dark modern blue/black */
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4da6ff; /* Light blue hover effect */
+        }
+
+        /* Section Formatting */
+        section {
+            min-height: 100vh; /* Forces each section to fill the screen */
+            padding: 100px 20px 50px; /* Top padding prevents the nav bar from overlapping text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Semi-transparent Content Box for Readability */
+        .content-box {
+            background: rgba(255, 255, 255, 0.92); /* White with slight transparency */
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #0f172a;
+            border-bottom: 3px solid #4da6ff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Footer Formatting */
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 32px;
+            margin: 0 20px;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            color: #4da6ff;
+            transform: translateY(-5px); /* Makes icons "pop" up when hovered */
+        }
+        
+        .footer-text {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#coding">Coding</a>
+        <a href="#outreach">Outreach</a>
+        <a href="#contact">Contact</a>
+        <a href="#cv">CV</a>
+    </nav>
+
+    <section id="about">
+        <div class="content-box">
+            <h2>About Me</h2>
+            <p>Welcome to my website! I am a researcher passionate about [Your Field]. Write a brief introduction about yourself here. What drives your work? What is your academic background?</p>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="content-box">
+            <h2>Research</h2>
+            <p>Detail your current and past research projects here.</p>
+            <ul>
+                <li><strong>Project 1:</strong> Description of your first major project.</li>
+                <li><strong>Project 2:</strong> Description of your second major project.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="coding">
+        <div class="content-box">
+            <h2>Coding & Software</h2>
+            <p>Describe the software, pipelines, or codebases you maintain or contribute to. Mention the languages you use (Python, C++, Julia, etc.).</p>
+        </div>
+    </section>
+
+    <section id="outreach">
+        <div class="content-box">
+            <h2>Outreach</h2>
+            <p>Talk about your efforts in science communication, public talks, mentoring, or teaching.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content-box">
+            <h2>Contact</h2>
+            <p>How can people reach you?</p>
+            <p><strong>Email:</strong> your.email@example.com</p>
+            <p><strong>Institution:</strong> Your University or Lab Name</p>
+        </div>
+    </section>
+
+    <section id="cv">
+        <div class="content-box">
+            <h2>Curriculum Vitae</h2>
+            <p>Provide a summary of your CV here, or offer a link to download it.</p>
+            <p><a href="path-to-your-cv.pdf" target="_blank" style="color: #4da6ff; font-weight: bold; text-decoration: none;">📄 Download Full CV (PDF)</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            
+            <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+            
+            <a href="YOUR_ADS_AUTHOR_SEARCH_LINK" target="_blank" title="Astrophysics Data System (ADS)"><i class="fa-solid fa-satellite-dish"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
