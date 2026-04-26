@@ -3806,4 +3806,18 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
-		}\n.icon.ads-icon:before {\n\tcontent: '';\n\tbackground-image: url('../../images/ads_logo_black_white_bg.png');\n\tbackground-size: cover;\n\tbackground-position: center;\n\tbackground-repeat: no-repeat;\n\tborder-radius: 50%;\n}
+		}
+
+.icon.ads-icon:before,
+.icon.ads_logo_white:before {
+	content: '';
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	background-image: url('../../images/ads_logo_white.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	transform: translateY(0.12em);
+	border-radius: 0%;
+}
